@@ -1,0 +1,100 @@
+/* CSS Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Gill Sans, sans-serif; /* Fonte padrão do site */
+    color: #333;
+    background-color: #f8d1d6; /* Fundo neutro */
+}
+
+/* Título da Página */
+h1 {
+    font-family: Gill Sans, sans-serif; /* Fonte padrão do site */
+    font-size: 30px;
+    color: #a33b56; /* Vermelho escuro para destaque */
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Seção de Produtos */
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaço entre os itens */
+    padding: 20px;
+}
+
+.product-item {
+    text-align: center;
+    font-family: Gill Sans, sans-serif; /* Fonte padrão do site */
+    background-color: #fff; /* Fundo branco */
+    border-radius: 10px; /* Bordas arredondadas */
+    border: 1px solid #48D1CC; /* Borda verde escuro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 15px;
+    width: 200px; /* Largura padrão */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-10px); /* Levanta o item */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao passar o mouse */
+    
+}
+
+.product-item img {
+    width: 100%; /* Imagem ocupa a largura do item */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 20px;
+    color: #DB7093; /* Vermelho escuro */
+    font-weight: bold;
+}
+
+.buy-button {
+    padding: 10px 20px;
+    background-color: #48D1CC; /* Verde escuro */
+    color: #fff; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #00CED1; /* Verde mais escuro ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    background-color: #00CED1; /* Verde escuro */
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-family: Gill Sans, sans-serif; /* Fonte padrão do site */
+    color: #fff; /* Texto branco */
+}
+
+.footer-item p {
+    font-weight: bold;
+}
+
+.footer-item span {
+    color: #dcdcdc; /* Cinza claro para contraste */
+}
